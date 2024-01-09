@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:getx_practice/home.dart';
 import 'package:get/get.dart';
+import 'package:getx_practice/secondpage.dart';
+import 'package:getx_practice/thirdpage.dart';
 
 void main() {
   runApp(
@@ -14,11 +16,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'GetX Practice',
-        home: const HomePage(),
-        theme: ThemeData(
-          primaryColor: Colors.black,
-        ));
+      debugShowCheckedModeBanner: false,
+      title: 'GetX Practice',
+      home: HomePage(),
+      theme: ThemeData(
+        primaryColor: Colors.blue,
+      ),
+      getPages: [
+        GetPage(name: '/secondpage', page: () => SecondPage()),
+        GetPage(name: '/thirdpage', page: () => ThirdPage()),
+      ],
+    );
   }
 }
