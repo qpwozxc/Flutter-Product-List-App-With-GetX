@@ -1,4 +1,4 @@
 # getx_practice
 
-A new Flutter project.
+GetX를 활용한 Routing 및 State management 학습
 
