@@ -23,6 +23,7 @@ class _SecondPageState extends State<SecondPage> {
                   // Navigation - Get.back()
                   onPressed: (() => Get.back()),
                   child: Text('Get.back()')),
+              SizedBox(height: 20),
             ],
           ),
         ));
