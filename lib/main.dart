@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:getx_practice/view/mypage.dart';
 
 void main() {
   runApp(
@@ -12,17 +12,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'GetX Practice',
-      home: HomePage(),
+    return MaterialApp(
+      title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: Colors.blue,
+        primarySwatch: Colors.blueGrey,
       ),
-      getPages: [
-        GetPage(name: '/secondpage', page: () => SecondPage()),
-        GetPage(name: '/thirdpage', page: () => ThirdPage()),
-      ],
+      home: MyPage(),
     );
   }
 }
