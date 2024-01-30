@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getx_practice/home.dart';
 import 'package:get/get.dart';
-import 'package:getx_practice/secondpage.dart';
-import 'package:getx_practice/thirdpage.dart';
 
 void main() {
   runApp(
